@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      background-color: #ffe6e6; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #ff9999;
+      padding: 20px;
+      color: white;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    img {
+      border: 10px solid #ffcc99;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      margin-top: 20px;
+      animation: rotateImage 5s linear infinite;
+    }
+
+    @keyframes rotateImage {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .birthday-wishes {
+  background-size: 300% 300%;
+  color: white;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+    .balloon {
+      width: 50px;
+      height: 70px;
+      background-color: #ff9999;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      position: absolute;
+      animation: balloonAnimation linear infinite;
+    }
+
+    @keyframes balloonAnimation {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-30px); }
+      100% { transform: translateY(0); }
+    }
+
+    .confetti {
+      width: 10px;
+      height: 10px;
+      background-color: #ffcc99;
+      position: absolute;
+      animation: confettiAnimation linear infinite;
+    }
+
+    @keyframes confettiAnimation {
+      0%, 100% { transform: translateY(0) rotate(0); }
+      50% { transform: translateY(-50px) rotate(180deg); }
+    }
+
+    footer {
+      background-color: #ff9999;
+      padding: 10px;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+<audio id="bgMusic" autoplay loop>
+    <source src="yoo.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+
+
+  <header>
+    <h1>🎉 Happy Birthday Big Man! 🎂</h1>
+    <div class="balloon" style="left: 20%;"></div>
+    <div class="balloon" style="left: 40%;"></div>
+    <div class="balloon" style="left: 60%;"></div>
+    <div class="balloon" style="left: 80%;"></div>
+  </header>
+
+  <img src="wayne.jpg" alt="Birthday Celebrations">
+
+  <div class="birthday-wishes">
+    <div class="circle"></div>
+    <p>Wishing you all the best my Guy!</p>
+  
+    <p>I hope it's a great day filled mad love and laughter.</p>
+
+    <p>Celebrate this special day and make wonderful memories.</p>
+
+    <p>Turn up my gee, You a real one!</p>
+  </div>
+
+  <div class="confetti" style="left: 10%;"></div>
+  <div class="confetti" style="left: 30%;"></div>
+  <div class="confetti" style="left: 50%;"></div>
+  <div class="confetti" style="left: 70%;"></div>
+  <div class="confetti" style="left: 90%;"></div>
+
+  <footer>
+    <p>Best Wishes from That pretty mf from Kacyiru, The only son of Kayi</p>
+  </footer>
+
+<script>
+   
+    window.addEventListener('beforeunload', function () {
+      document.getElementById('bgMusic').pause();
+    });
+  </script>
+
+</body>
+</html>
